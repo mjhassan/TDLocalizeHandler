@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVl-Pb-Atf">
+                                <rect key="frame" x="20" y="20" width="560" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Ze7-Lv-fRC"/>
+                                </constraints>
+                                <string key="text">This is a long sentenced message to test localization. Select any language by pressing the button and then Press translate button to change this text.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Zr-3q-WlD" customClass="ButtonContainer">
+                                <rect key="frame" x="167" y="238" width="266" height="123"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pe-28-SCh">
+                                        <rect key="frame" x="26" y="8" width="70" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="rxy-MV-31Q"/>
+                                        </constraints>
+                                        <state key="normal" title="English"/>
+                                        <connections>
+                                            <action selector="buttonSelected:" destination="9Zr-3q-WlD" eventType="touchUpInside" id="s7b-tq-GBD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PI7-2a-ueO">
+                                        <rect key="frame" x="99" y="8" width="70" height="30"/>
+                                        <state key="normal" title="বাংলা"/>
+                                        <connections>
+                                            <action selector="buttonSelected:" destination="9Zr-3q-WlD" eventType="touchUpInside" id="Lbt-Rm-Wc9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEN-S8-J3F">
+                                        <rect key="frame" x="26" y="46" width="70" height="30"/>
+                                        <state key="normal" title="日本語"/>
+                                        <connections>
+                                            <action selector="buttonSelected:" destination="9Zr-3q-WlD" eventType="touchUpInside" id="fWX-FN-sPv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nou-OO-2q4">
+                                        <rect key="frame" x="98" y="46" width="70" height="30"/>
+                                        <state key="normal" title="العربية"/>
+                                        <connections>
+                                            <action selector="buttonSelected:" destination="9Zr-3q-WlD" eventType="touchUpInside" id="CeP-27-v8h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOi-ps-yWM">
+                                        <rect key="frame" x="176" y="46" width="70" height="30"/>
+                                        <state key="normal" title="français"/>
+                                        <connections>
+                                            <action selector="buttonSelected:" destination="9Zr-3q-WlD" eventType="touchUpInside" id="MHB-su-Pv1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZd-J3-XUD">
+                                        <rect key="frame" x="26" y="85" width="70" height="30"/>
+                                        <state key="normal" title="español"/>
+                                        <connections>
+                                            <action selector="buttonSelected:" destination="9Zr-3q-WlD" eventType="touchUpInside" id="dYu-8r-uqE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQ0-3k-XeA">
+                                        <rect key="frame" x="99" y="85" width="70" height="30"/>
+                                        <state key="normal" title="Русский"/>
+                                        <connections>
+                                            <action selector="buttonSelected:" destination="9Zr-3q-WlD" eventType="touchUpInside" id="rYw-0l-4Sb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UP2-bq-Xms">
+                                        <rect key="frame" x="176" y="85" width="71" height="30"/>
+                                        <state key="normal" title="português"/>
+                                        <connections>
+                                            <action selector="buttonSelected:" destination="9Zr-3q-WlD" eventType="touchUpInside" id="nHN-Lg-94g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8A-KR-2KH">
+                                        <rect key="frame" x="176" y="8" width="70" height="30"/>
+                                        <state key="normal" title="中文"/>
+                                        <connections>
+                                            <action selector="buttonSelected:" destination="9Zr-3q-WlD" eventType="touchUpInside" id="C4s-7B-2mh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="EOi-ps-yWM" firstAttribute="leading" secondItem="Nou-OO-2q4" secondAttribute="trailing" constant="8" symbolic="YES" id="15b-53-sdG"/>
+                                    <constraint firstItem="gZd-J3-XUD" firstAttribute="leading" secondItem="gEN-S8-J3F" secondAttribute="leading" id="1rt-9Q-LbK"/>
+                                    <constraint firstItem="XQ0-3k-XeA" firstAttribute="leading" secondItem="PI7-2a-ueO" secondAttribute="leading" id="3xG-Pi-xMA"/>
+                                    <constraint firstAttribute="width" constant="266" id="46p-UL-koq"/>
+                                    <constraint firstItem="UP2-bq-Xms" firstAttribute="baseline" secondItem="XQ0-3k-XeA" secondAttribute="baseline" id="4Vo-YB-q2S"/>
+                                    <constraint firstAttribute="height" constant="123" id="8Gj-Fy-TrQ"/>
+                                    <constraint firstItem="5pe-28-SCh" firstAttribute="leading" secondItem="9Zr-3q-WlD" secondAttribute="leading" constant="26" id="Cq3-VA-h4b"/>
+                                    <constraint firstItem="5pe-28-SCh" firstAttribute="leading" secondItem="gEN-S8-J3F" secondAttribute="leading" id="DJc-2t-xf1"/>
+                                    <constraint firstItem="n8A-KR-2KH" firstAttribute="leading" secondItem="PI7-2a-ueO" secondAttribute="trailing" constant="7" id="FT8-Yv-ech"/>
+                                    <constraint firstItem="gEN-S8-J3F" firstAttribute="baseline" secondItem="Nou-OO-2q4" secondAttribute="baseline" id="FXV-hc-HZW"/>
+                                    <constraint firstItem="5pe-28-SCh" firstAttribute="trailing" secondItem="gEN-S8-J3F" secondAttribute="trailing" id="G8A-i5-A7C"/>
+                                    <constraint firstItem="XQ0-3k-XeA" firstAttribute="baseline" secondItem="gZd-J3-XUD" secondAttribute="baseline" id="GqX-k6-9wN"/>
+                                    <constraint firstItem="5pe-28-SCh" firstAttribute="baseline" secondItem="PI7-2a-ueO" secondAttribute="baseline" id="HH3-RW-wae"/>
+                                    <constraint firstItem="n8A-KR-2KH" firstAttribute="trailing" secondItem="EOi-ps-yWM" secondAttribute="trailing" id="HWm-Nt-dJ7"/>
+                                    <constraint firstItem="Nou-OO-2q4" firstAttribute="baseline" secondItem="EOi-ps-yWM" secondAttribute="baseline" id="Jrz-FW-aCV"/>
+                                    <constraint firstItem="PI7-2a-ueO" firstAttribute="baseline" secondItem="n8A-KR-2KH" secondAttribute="baseline" id="TJQ-cs-nBW"/>
+                                    <constraint firstItem="Nou-OO-2q4" firstAttribute="centerX" secondItem="9Zr-3q-WlD" secondAttribute="centerX" id="TVZ-c4-g3f"/>
+                                    <constraint firstItem="PI7-2a-ueO" firstAttribute="leading" secondItem="5pe-28-SCh" secondAttribute="trailing" constant="3" id="U6T-9f-iq0"/>
+                                    <constraint firstItem="n8A-KR-2KH" firstAttribute="leading" secondItem="EOi-ps-yWM" secondAttribute="leading" id="bXQ-aA-pwA"/>
+                                    <constraint firstItem="gEN-S8-J3F" firstAttribute="top" secondItem="5pe-28-SCh" secondAttribute="bottom" constant="8" symbolic="YES" id="byS-oj-BdK"/>
+                                    <constraint firstItem="EOi-ps-yWM" firstAttribute="leading" secondItem="UP2-bq-Xms" secondAttribute="leading" id="eCm-9P-19a"/>
+                                    <constraint firstItem="UP2-bq-Xms" firstAttribute="centerX" secondItem="EOi-ps-yWM" secondAttribute="centerX" id="g1e-JX-ZFF"/>
+                                    <constraint firstItem="XQ0-3k-XeA" firstAttribute="bottom" secondItem="9Zr-3q-WlD" secondAttribute="bottomMargin" id="gkg-2m-Oi0"/>
+                                    <constraint firstItem="n8A-KR-2KH" firstAttribute="top" secondItem="9Zr-3q-WlD" secondAttribute="topMargin" id="nlg-pT-7tn"/>
+                                    <constraint firstItem="Nou-OO-2q4" firstAttribute="leading" secondItem="gEN-S8-J3F" secondAttribute="trailing" constant="2" id="q5M-AX-AsW"/>
+                                    <constraint firstItem="XQ0-3k-XeA" firstAttribute="trailing" secondItem="PI7-2a-ueO" secondAttribute="trailing" id="qWy-39-yv5"/>
+                                    <constraint firstItem="gZd-J3-XUD" firstAttribute="trailing" secondItem="gEN-S8-J3F" secondAttribute="trailing" id="slQ-Ul-nIN"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="arButton" destination="Nou-OO-2q4" id="gfE-Vd-fOr"/>
+                                    <outlet property="bnButton" destination="PI7-2a-ueO" id="Cfe-Ue-DIt"/>
+                                    <outlet property="chButton" destination="n8A-KR-2KH" id="QiT-ak-kPE"/>
+                                    <outlet property="enButton" destination="5pe-28-SCh" id="t5v-a0-3ck"/>
+                                    <outlet property="esButton" destination="gZd-J3-XUD" id="bMA-sz-Vu8"/>
+                                    <outlet property="frButton" destination="EOi-ps-yWM" id="XY7-q1-bRK"/>
+                                    <outlet property="jpButton" destination="gEN-S8-J3F" id="QRg-a2-yFr"/>
+                                    <outlet property="prButton" destination="UP2-bq-Xms" id="XjX-N4-ATp"/>
+                                    <outlet property="rsButton" destination="XQ0-3k-XeA" id="a3j-ja-6OG"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srI-ol-LrG">
+                                <rect key="frame" x="183" y="550" width="235" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aAr-ST-1dI"/>
+                                    <constraint firstAttribute="width" constant="235" id="h4O-aQ-KOu"/>
+                                </constraints>
+                                <state key="normal" title="Translate the message"/>
+                                <connections>
+                                    <action selector="translate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bXh-Li-cIV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PVl-Pb-Atf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0qf-Gw-caZ"/>
+                            <constraint firstItem="PVl-Pb-Atf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2dx-qb-ZFh"/>
+                            <constraint firstItem="9Zr-3q-WlD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ESD-kl-z9P"/>
+                            <constraint firstItem="9Zr-3q-WlD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OX8-vS-Kow"/>
+                            <constraint firstItem="PVl-Pb-Atf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Wx1-c5-cT3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="srI-ol-LrG" secondAttribute="bottom" constant="20" id="XrB-XJ-Dl0"/>
+                            <constraint firstItem="srI-ol-LrG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wh2-7u-r7w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="PVl-Pb-Atf" id="0BJ-p2-6v7"/>
+                        <outlet property="translateButton" destination="srI-ol-LrG" id="TeA-aU-T56"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="224" y="339"/>
+        </scene>
+    </scenes>
+</document>

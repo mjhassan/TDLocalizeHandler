@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  TDLocalizeHandlerDemo
+
+  Created by Jahid on 11/25/15.
+  Copyright © 2015 Jahid. All rights reserved.
+*/
+pre-storedMap   = "এই স্থানীয়করণ পরীক্ষা দীর্ঘ বার্তা. বাটন টিপে যে কোনো ভাষা নির্বাচন করুন এবং তারপরে চাপুন এই টেক্সট পরিবর্তন বাটন অনুবাদ.";
+button.title    = "বার্তা অনুবাদ";

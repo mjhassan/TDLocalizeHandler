@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  TDLocalizeHandlerDemo
+
+  Created by Jahid on 11/25/15.
+  Copyright © 2015 Jahid. All rights reserved.
+*/
+pre-storedMap   = "Это длинное сообщение, чтобы проверить локализации. Выберите язык, нажав кнопку, а затем нажмите кнопку, чтобы перевести изменить этот текст.";
+button.title    = "Перевести сообщение";

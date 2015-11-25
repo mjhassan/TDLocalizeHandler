@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  TDLocalizeHandlerDemo
+
+  Created by Jahid on 11/25/15.
+  Copyright © 2015 Jahid. All rights reserved.
+*/
+pre-storedMap   = "This is a long sentenced message to test localization. Select any language by pressing the button and then Press translate button to change this text.";
+button.title    = "Translate the message";

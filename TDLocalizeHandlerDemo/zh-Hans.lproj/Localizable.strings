@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  TDLocalizeHandlerDemo
+
+  Created by Jahid on 11/25/15.
+  Copyright © 2015 Jahid. All rights reserved.
+*/
+pre-storedMap   = "这是一个漫长的消息来测试本地化。按按钮，选择任何一种语言，然后按下翻译按钮来改变这个文本。";
+button.title    = "翻译的消息";
